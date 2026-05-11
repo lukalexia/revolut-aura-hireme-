@@ -1995,7 +1995,7 @@
           </div>
           <div class="asset-row">
             <span class="tag">Email sequences</span>
-            <p class="desc"><strong>Moment-segmented flows.</strong> Each persona gets their own version of the story over a 4-week activation arc.</p>
+            <p class="desc"><strong>Moment-segmented flows.</strong> Each persona receives tailored messaging based on their checkout anxiety type and behavior patterns.</p>
           </div>
           <div class="asset-row">
             <span class="tag">In-app announcement</span>
@@ -2169,15 +2169,13 @@
     </div>
 
     <div class="kpi-section">
-      <div class="kpi-section-label">By channel</div>
+      <div class="kpi-section-label">By channel <span style="font-weight:400;font-size:13px;color:#9a9aa3">— example kpis based on this campaign</span></div>
       <div class="kpi-channel-grid">
         <div class="kpi-channel">
           <div class="ch-name"><span class="ch-letter" style="background:var(--ink);color:var(--lime)">C</span>CRM</div>
           <ul>
             <li>Email open rate + CTR</li>
             <li>Push notification CTR</li>
-            <li>In-app modal activation rate</li>
-            <li>Email-to-Aura activation rate</li>
           </ul>
         </div>
         <div class="kpi-channel">
@@ -2193,7 +2191,7 @@
           <div class="ch-name"><span class="ch-letter" style="background:var(--purple);color:var(--white)">O</span>Out of home</div>
           <ul>
             <li>QR scan rate</li>
-            <li>App-open lift in target metros</li>
+            <li>App activation lift</li>
             <li>Brand recall (post-campaign survey)</li>
           </ul>
         </div>
@@ -2292,6 +2290,9 @@
 </style>
 
 <script>
+  // Scroll to top on page load
+  window.addEventListener('load', ()=>{ window.scrollTo(0, 0); });
+
   // CTA banner trigger
   function openBanner(){
     document.getElementById('hireMeModal').style.display='flex';
